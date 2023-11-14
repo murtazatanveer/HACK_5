@@ -1,15 +1,18 @@
 #include<stdio.h>
-double degree_to_radians(int degree);
+double degree_to_radians();
 
 int main(){
 
+double degree;
+printf("Enter value in Degrees : ");
+scanf("%lf",&degree);
 
+printf("\n\nAfter converting %.2lf degrees we found %.2lf Radians",degree,degree_to_radians(degree));
 
-
-    return 0;
+    
 }
 
-double degree_to_radians(int degree){
+double degree_to_radians(double degree){
 
 const float pi = 3.14;
 
