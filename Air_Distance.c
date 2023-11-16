@@ -36,6 +36,11 @@ if( (lat_ori>=-90 && lat_ori<=90) && (lat_des>=-90 && lat_des<=90) && (lon_des>=
         continue;
     }
 
+
+    printf("\n_____________________\n");
+// calling function
+    printf("AIR DISTANCE : %.2lf",air_distance(lat_ori , lat_des , lon_ori , lon_des));
+
 }
 
 }
@@ -58,6 +63,8 @@ double c = ( pi * lon_ori)/180;
 //d : lon_des
 double d = ( pi * lon_des)/180;
 
-double distance = acos( (sin(lat_ori) * sin(lat_des)) + (cos(lat_ori) * cos(lat_des) * cos(d-c)) ) * ear_rad;
+double distance = acos( (sin(a) * sin(b)) + (cos(a) * cos(b) * cos(d-c)) ) * ear_rad;
+
+return distance;
 
 }
