@@ -37,11 +37,11 @@ if( (lat_ori>=-90 && lat_ori<=90) && (lat_des>=-90 && lat_des<=90) && (lon_des>=
     }
 
 
+  }
+
     printf("\n_____________________\n");
 // calling function
-    printf("AIR DISTANCE : %.2lf",air_distance(lat_ori , lat_des , lon_ori , lon_des));
-
-}
+    printf("\nAIR DISTANCE : %.2lf",air_distance(lat_ori , lat_des , lon_ori , lon_des));
 
 }
 
