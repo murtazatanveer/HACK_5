@@ -3,7 +3,7 @@
 #include "util.h"
 
 
-double air_distance(double lat_ori , double lat_des , double lon_ori , double lon_des){
+double getAirDistance(double lat_ori , double lat_des , double lon_ori , double lon_des){
 
 const float pi =3.14;
 const int ear_rad = 6371;

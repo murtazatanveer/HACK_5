@@ -1,5 +1,5 @@
 
-double air_distance();
+double getAirDistance();
 
 double degreesToRadians(double degrees);
 
