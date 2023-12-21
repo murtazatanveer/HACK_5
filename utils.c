@@ -40,3 +40,26 @@ return radians;
 
 }
 
+
+double lorentzTimeDilation(double t, double percentC) {
+    
+// c is speed of light which is constant
+
+    const double c = 299792458.0;
+
+    double v = percentC * c / 100.0;
+  
+    double z = 1.0 / sqrt(1.0 - pow(v / c, 2));
+  
+    return t/z;
+
+}
+
+
+
+
+
+
+
+
+
